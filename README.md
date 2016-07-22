@@ -9,6 +9,4 @@ http://cihadturhan.com/
 
 http://tympanus.net/Development/ImageTiltEffect/
 
-http://codepen.io/codebhendi/pen/rLdoWx
-
 http://codepen.io/pedrocastro/pen/KzGEQL
