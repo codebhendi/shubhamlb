@@ -1,0 +1,47 @@
+var data = [
+	{
+		"title": "aparoksha 2015",
+		"img": "img/aparoksha.png",
+		"body": "Aparoksha is the technical fest of Indian Institute of Information Technology, Allahabad. The fest has a website with all the list of events, contact details of various organisers and lot more.",
+		"technologies": "HTML, CSS and Javascript libraries for Frontend.PHP for Backend.MySQL for database",
+		"worked": "front end",
+		"status": "completed",
+		"color" : "brown"
+	},
+	{
+		"title": "opinator",
+		"img": "img/opinator.jpg",
+		"body": "It is a browser extension which can be used to get a better insight about products in ecommerce website from product reviews.",
+		"technologies": "Natural Language Processing.Javascript for Browser Extensions.Scrapy for web scraping.Flask for web server",
+		"worked": "Browser Extension",
+		"status": "completed",
+		"color": "blue"
+	},
+	{
+		"title": "skull start",
+		"img": "img/meanstack.png",
+		"body": "A website to read, write and share short stories. It has been made entirely in MEAN stack. It is a responsive website which was made to just practice my MEAN concepts.",
+		"technologies": "Mongoose DB for database, Express and Node.js for backend, angular.js and material design for front end",
+		"worked": "Frontend and backend",
+		"status": "ongoing",
+		"color": "red"
+	},
+	{
+		"title": "Video Downloader",
+		"img": "img/chrome.jpg",
+		"body": "Chrome Extension developed to download vides from almost all video streaming websites. The webites from which it can download also includes and hence it is not in chrome store",
+		"technologies": "Chrome  Extension api, Javascript, HTML, CSS, AJAX",
+		"worked": "ALl the parts",
+		"status": "completed",
+		"color": "green"
+	},
+	{
+		"title": "Effervescence 2015",
+		"img": "img/effe.png",
+		"body": "Effervescence is the cultural fest of Indian Institute of Information Technology, Allahabad. The fest has a website with all the list of events, contact details of various organisers and lot more.",
+		"technologies": "HTML, CSS and Javascript libraries for Frontend.PHP for Backend.MySQL for database",
+		"worked": "Frontend",
+		"status": "completed",
+		"color": "indigo"
+	}
+]

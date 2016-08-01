@@ -6,42 +6,55 @@
 	<title>Index</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 	<link rel="stylesheet" href="css/content.css" />
 
 </head>
 <body>
-	<div class="nav-wrapper">
-		<div id="nav-icon1">
-		  <span></span>
-		  <span></span>
-		  <span></span>
-		</div>
-	</div>
-	<div class="section header-front valign-wrapper">
+	<div class="section header-front valign-wrapper grey darken-4">
 		<div class="container">
-			<div class="front-wrapper valign">
-				<div class="hello">Hello</div>
-				<div class="name">i'm shubham</div>
-				<div class="skill">i'm a web developer and gamer</div>
+			<div class="row">
+				<div class="col s12 m11 l11 offset-l1 offset-m1">
+					<div class="front-wrapper valign">
+						<div class="hello">Hello</div>
+						<div class="name">i'm shubham</div>
+						<div class="skill">i'm a web developer and gamer</div>
+					</div>	
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="section">
+	<div class="section grey lighten-4 valign-wrapper">
+		<div class="container center-align valign">
+					<h1>About me</h1>
+					<p class="flow-text justify-text">I'm a B.Tech. student of Information Technology. I love softwares and web development. I love to work in javascript and a big fan of MEAN stack. I have been working on front end from last three years. I have worked in Express and Angular. I love gaming mainly Counter Strike and DOTA 2.</p>		
+		</div>
+	</div>
+	<div class="section valign-wrapper grey darken-4">
+		<div class="container valign">
+			<ul class="skills-chart">
+				<li class="skills-chart-legend skills-chart-legend--interest">Level of Interest</li>
+				<li class="skills-chart-legend skills-chart-legend--skill">Current Skill</li>
+			</ul>
+
+			<canvas id="myChart" width="700" height="500"></canvas>
+		</div>
+	</div>
+	<div class="section header-index valign-wrapper">
+		<div class="container valign" id="slides">
+		</div>
+	</div>
+	<div class="section grey darken-4 valign-wrapper">
 		<div class="container">
-			<h1>About me</h1>
-			<p class="flow-text">I'm a B.Tech. student of Information Technology. I love softwares and web development. I love to work in javascript and a big fan of MEAN stack. I have been working on front end from last three years. I have worked in Express and Angular. I love gaming mainly Counter Strike and DOTA 2.</p>
+			<p class="flow-text">If you want to collaborate on any amazing stuff or you just like to say hello and have a coffee/beer, feel free to get in touch with me!</p>
+			<a href="https://www.facebook.com/bhendi.pm4">Facebook</a>
+			<a href="https://in.linkedin.com/in/shubham-bhendarkar">LinkedIn</a>
+			<a href="https://twitter.com/codebhendi">Twitter</a>
+			<a href="mailto:bhendarkar.shubham@gmail.com">Mail</a>
 		</div>
 	</div>
-	<div class="section header-index" style="display:none">
-		<div class="hero">
-			<div class="hero__imgwrap">
-				<img class="hero__img tilt-effect" data-tilt-options='{ "opacity" : 0.6, "movement": { "perspective" : 1500, "translateX" : 10, "translateY" : 10, "translateZ" : 2, "rotateX" : 3, "rotateY" : 3 } }' src="img/1.jpg" alt="Hero image" />
-			</div>
-			<header class="header-text">Hi, I am Shubham</header>
-		</div>
-	</div>
+	<script src="http://www.chartjs.org/assets/Chart.min.js"></script>
+	<script src="js/data.json"></script>
 	<script src="js/content.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script> -->
 </body>
 </html>

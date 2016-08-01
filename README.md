@@ -10,3 +10,7 @@ http://cihadturhan.com/
 http://tympanus.net/Development/ImageTiltEffect/
 
 http://codepen.io/pedrocastro/pen/KzGEQL
+
+http://codepen.io/michaeltcoelho/pen/awGzf
+
+http://codepen.io/nodws/pen/ZWKbpe

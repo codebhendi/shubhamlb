@@ -1,88 +1,35 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
-
-body {
-	background-color: #F2F1EF;
-}
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
+	border: none;
+}
+html, html * {
+	text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  font-smooth: always;
+  font-smooth: never;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 .nav-wrapper {
 	position: absolute;
 	padding: 1%;
+	z-index: 100;
 }
 
 .header-front {
 	height: 100vh;
 }
-/* Icon 1 */
-
-#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
-  width: 60px;
-  height: 45px;
-  position: relative;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
+.section {
+	min-height: 100vh;
+	position: relative;
+}
+.justify-text {
+	text-align: justify;
 }
 
-#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
-  display: block;
-  position: absolute;
-  height: 9px;
-  width: 100%;
-  background: #d3531a;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-}
-
-#nav-icon1 span:nth-child(1) {
-  top: 0px;
-}
-
-#nav-icon1 span:nth-child(2) {
-  top: 18px;
-}
-
-#nav-icon1 span:nth-child(3) {
-  top: 36px;
-}
-
-#nav-icon1.open span:nth-child(1) {
-  top: 18px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
-#nav-icon1.open span:nth-child(2) {
-  opacity: 0;
-  left: -60px;
-}
-
-#nav-icon1.open span:nth-child(3) {
-  top: 18px;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
 .front-wrapper {
 	text-align: center;
 	text-transform: uppercase;
@@ -103,10 +50,8 @@ body {
 }
 
 .header-index {
-	background: url('../img/1.jpg') no-repeat center center;
-	display: block;
 	background-size: auto 100vh;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .header-text {
@@ -115,6 +60,17 @@ body {
 	top: 25vh;
 	width: 100%;
 	font-size: x-large;
+}
+@media screen and (max-width: 470px) {
+	.hello {
+		font-size: 26vw;
+	}
+	.name { 
+		font-size: 11.8vw;
+	}
+	.skill {
+		font-size: 4.6vw
+	}
 }
 
 .tilt {
@@ -147,11 +103,8 @@ body {
 }
 
 .hero {
-	position: absolute;
-	top: 50px;
-	left: 50px;
-	bottom: 50px;
-	right: 50px;
+	position: relative;
+	height: 100%;
 	overflow: hidden;
 	text-align: center;
 }
@@ -161,17 +114,6 @@ body {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-}
-
-.hero__imgwrap::after {
-	content: '';
-	position: absolute;
-	background: rgba(76,0,1,0.1);
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
 }
 
 .hero__img {
@@ -186,14 +128,14 @@ body {
 
 .hero__imgwrap .tilt__back,
 .hero__imgwrap .tilt__front {
-	background-size: auto 100vh;
+	background-size: contain;
 }
 
 @media screen and (min-aspect-ratio: 1440/960) {
 	.hero__imgwrap .tilt__back,
 	.hero__imgwrap .tilt__front,
 	.header-index {
-		background-size: 100vw auto;
+		background-size: contain;
 	}
 	.hero__img {
 		width: 100vw;
@@ -202,33 +144,116 @@ body {
 }
 
 @media screen and (max-width: 40em){
-	.codrops-header h1 {
-		font-size: 2.5em;
+	
+}
+
+/*#slides {
+	height: 500px;
+}*/
+
+.panel.row .col {
+	padding: 0px;
+	margin-right: 5rem
+}
+.panel.row .col:nth-child(3) {
+	margin-right: 0px;
+}
+.panel-title {
+	text-transform: uppercase;
+	letter-spacing: 1vw;
+	margin-bottom: 2vw;
+}
+.panel-title:after {
+	margin: 3rem 0px auto 0px;
+	background-color: black;
+	height: .1rem;
+	width: 2.5rem;
+	content: '';
+	display: block;
+}
+.panel-content {
+	font-size: 1.3rem;
+}
+.panel-content p:nth-child(2) {
+	font-weight: bold;
+}
+.panel-image {
+	height: 250px;
+}
+.line {
+  position: relative;
+  height: 0.1rem;
+  background-color: #e8e8e8;
+  margin: 5rem -0.75rem;
+}
+	
+@media screen and (min-width: 601px) {
+	.panel.row .col.m6 {
+		width: 43%
 	}
-	.hero {
-		left: 20px;
-		bottom: 20px;
-		right: 20px;
-		top: 20px;
-	}
-	.github-link {
-		top: 40px;
-		right: 40px;
-	}
-	.codrops-links {
-		top: 35px;
-		left: 30px;
-	}
-	.mobile-note {
-		display: block;
+	
+}
+@media screen and (min-width: 993px) {
+	.panel.row .col.l6 {
+		width: 45%;
 	}
 }
 
-@media screen and (max-width: 40em) {
-	.hero {
-		left: 20px;
-		bottom: 20px;
-		right: 20px;
-		top: 20px;
-	}
+/************** skill chart **********/
+
+#myChart {
+  cursor: crosshair
+}
+
+.skills-chart {
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.skills-chart-legend {
+  margin: 0 auto 15px
+}
+
+.skills-chart-canvas {
+  max-width: 700px;
+  margin: auto
+}
+
+.skills-chart-legend {
+  display: inline-block;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em
+}
+
+.skills-chart-legend:before {
+  content: "";
+  display: block;
+  float: left;
+  margin: 3px 0 0 -15px;
+  height: 9px;
+  width: 9px
+}
+
+.skills-chart-legend--interest {
+  color: #2bb0d4
+}
+
+.skills-chart-legend--interest:before {
+  background: #2bb0d4
+}
+
+.skills-chart-legend--skill {
+  color: #61c191
+}
+
+.skills-chart-legend--skill:before {
+  background: #61c191
 }
