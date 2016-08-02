@@ -48,7 +48,6 @@ html, html * {
 	font-size: 4.6rem;
 	font-weight: 300;
 }
-
 .header-index {
 	background-size: auto 100vh;
 	min-height: 100vh;
@@ -71,6 +70,11 @@ html, html * {
 	.skill {
 		font-size: 4.6vw
 	}
+}
+.work-container {
+	font-size: 1.3rem;
+	padding-top: 5%;
+	text-transform: uppercase;
 }
 
 .tilt {
@@ -142,15 +146,6 @@ html, html * {
 		height: auto;
 	}
 }
-
-@media screen and (max-width: 40em){
-	
-}
-
-/*#slides {
-	height: 500px;
-}*/
-
 .panel.row .col {
 	padding: 0px;
 	margin-right: 5rem
@@ -256,4 +251,18 @@ html, html * {
 
 .skills-chart-legend--skill:before {
   background: #61c191
+}
+
+/******************* footer *********************/
+blockquote.flow-text {
+	color: #3498DB;
+	border-color: #67809F;
+}
+.link-container {
+	text-align: center;
+	font-size: 1.3rem;
+}
+.link-container a {
+	color: #EEEEEE;
+	text-transform: uppercase;
 }
