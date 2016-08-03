@@ -244,6 +244,7 @@
 			new TiltFx(img);
 		});
 		chart();
+		scrollMenu();
 	}
 
  
@@ -257,7 +258,7 @@
 function chart() {
 	var ctx = document.getElementById("myChart").getContext("2d");
 	var data = {
-    labels: ["Website Design", "UX Design", "Marketing", "Javascript", "HTML & CSS", "Ruby on Rails", "Tech Demos", "Leading Teams"],
+    labels: ["Website Design", "UX Design", "Express", "Javascript", "HTML & CSS", "Python", "Angular", "Backend","Chrom Extension"],
     datasets: [
       {
         label: "Percieved Interest",
@@ -265,7 +266,7 @@ function chart() {
         strokeColor: "rgba(43,176,212,1)",
         pointColor: "rgba(43,176,212,1)",
         pointHighlightStroke: "rgba(43,176,212,1)",
-        data: [100, 70, 85, 90, 95, 75, 90, 100]
+        data: [100, 75, 95, 90, 95, 85, 90, 85, 79]
       },
       {
         label: "Relative Skill",
@@ -273,7 +274,7 @@ function chart() {
         strokeColor: "rgba(140,200,50,1)",
         pointColor: "rgba(140,200,50,1)",
         pointHighlightStroke: "rgba(140,200,50,1)",
-        data: [85, 75, 70, 80, 85, 60, 75, 50]
+        data: [85, 65, 70, 90, 95, 60, 85, 60, 80]
       }
     ]
 	};
@@ -283,16 +284,15 @@ function chart() {
 		responsive: true,
 		showTooltips: true,
 		scaleOverride: true,
-	    scaleSteps: 5,
-	    scaleStepWidth: 20,
-	    scaleStartValue: 0,
-	    scaleLineColor: "rgba(200,200,200,.15)",
-		
-	    angleShowLineOut: true,
-	    angleLineWidth : 1,
-	    angleLineColor : "rgba(200,200,250,.15)",
-	    pointLabelFontFamily : "'freight-sans-pro', Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif",
-	    pointLabelFontSize : 14,
+    scaleSteps: 5,
+    scaleStepWidth: 20,
+    scaleStartValue: 0,
+    scaleLineColor: "rgba(200,200,200,.15)",
+    angleShowLineOut: true,
+    angleLineWidth : 1,
+    angleLineColor : "rgba(200,200,250,.15)",
+    pointLabelFontFamily : "'freight-sans-pro', Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif",
+    pointLabelFontSize : 14,
 		pointLabelFontColor : "#99b",
 		pointDot : false,
 		datasetStrokeWidth : 1
@@ -395,7 +395,15 @@ function createImg(obj, flag) {
 	p = document.createElement('P');
 	p.innerHTML = "Status: <b>" + obj.status + "</b>";
 	wrapper.appendChild(p);
-	
+
+	if (obj.link) {
+		p = document.createElement('a');
+		p.href = obj.link;
+		p.className = "waves-effect waves-teal btn-flat no-transform";
+		p.innerText = "Github link";
+		wrapper.appendChild(p);
+	}
+
 	p = document.createElement('div');
 	p.className = "panel row";
 	p.appendChild(span);
@@ -429,4 +437,27 @@ function createElements() {
 		line.className = "line";
 		slider.appendChild(line);
 	}
+}
+
+var lastPos = 0;
+
+function scrollMenu() {
+	window.addEventListener("scroll", function(e) {
+		var pos = window.scrollY;
+		var el = document.getElementById("menu");
+
+		if (pos < lastPos) {
+			el.classList.add("visible");
+		} else {
+			el.classList.remove("visible");	
+		}
+		
+		lastPos = pos;
+
+
+		if (lastPos === 0) {
+			el.classList.remove("visible");
+		}
+	}, 
+	false);
 }

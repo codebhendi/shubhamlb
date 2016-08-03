@@ -15,7 +15,8 @@ var data = [
 		"technologies": "Natural Language Processing.Javascript for Browser Extensions.Scrapy for web scraping.Flask for web server",
 		"worked": "Browser Extension",
 		"status": "completed",
-		"color": "blue"
+		"color": "blue",
+		"link": "https://github.com/codebhendi/opinator-plugin"
 	},
 	{
 		"title": "skull start",
@@ -33,7 +34,8 @@ var data = [
 		"technologies": "Chrome  Extension api, Javascript, HTML, CSS, AJAX",
 		"worked": "ALl the parts",
 		"status": "completed",
-		"color": "green"
+		"color": "green",
+		"link": "https://github.com/codebhendi/videoDownloader"
 	},
 	{
 		"title": "Effervescence 2015",
@@ -42,6 +44,7 @@ var data = [
 		"technologies": "HTML, CSS and Javascript libraries for Frontend.PHP for Backend.MySQL for database",
 		"worked": "Frontend",
 		"status": "completed",
-		"color": "indigo"
+		"color": "indigo",
+		"link": "https://github.com/GeekHaven/Effervescence-2015"
 	}
 ]

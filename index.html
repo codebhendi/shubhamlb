@@ -11,20 +11,55 @@
 
 </head>
 <body>
-	<div class="section header-front valign-wrapper grey darken-4">
+	<nav id="menu" class="navbar-fixed grey lighten-4 black-text">
+    <div class="nav-wrapper container">
+
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+       	<li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+     		<li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+          
+
+	<div class="section header-front valign-wrapper grey darken-4" id='home'>
+		<nav class="transparent">
+	    <div class="nav-wrapper container">
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+	       	<li><a href="#about">About</a></li>
+	        <li><a href="#skills">Skills</a></li>
+	        <li><a href="#projects">Projects</a></li>
+	        <li><a href="contact">Contact</a></li>
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo">
+	        <li><a href="#about">About</a></li>
+	        <li><a href="#skills">Skills</a></li>
+	        <li><a href="#projects">Projects</a></li>
+	        <li><a href="contact">Contact</a></li>
+	      </ul>
+	    </div>
+	  </nav>
 		<div class="container">
 			<div class="row">
-				<div class="col s12 m11 l11 offset-l1 offset-m1">
-					<div class="front-wrapper valign">
-						<div class="hello">Hello</div>
-						<div class="name">i'm shubham</div>
-						<div class="skill">i'm a web developer and gamer</div>
-					</div>	
-				</div>
+				<div class="front-wrapper valign">
+					<div class="hello">Hello</div>
+					<div class="name">i'm shubham</div>
+					<div class="skill">i'm a web developer and gamer</div>
+				</div>	
 			</div>
 		</div>
 	</div>
-	<div class="section grey lighten-4 valign-wrapper">
+	<div class="section grey lighten-4 valign-wrapper" id="about">
 		<div class="container center-align valign">
 					<h1>About me</h1>
 					<p class="flow-text justify-text">I'm a B.Tech. student of Information Technology. I love softwares and web development. I love to work in javascript and a big fan of MEAN stack. I have been working on web development from last three years. I have worked in Express and Angular. I love gaming mainly Counter Strike and DOTA 2. My hobbies other than gaming include reading a lot of comics and books. Feel free to check my work.</p>
@@ -35,7 +70,7 @@
 					</div>		
 		</div>
 	</div>
-	<div class="section valign-wrapper grey darken-4">
+	<div class="section valign-wrapper grey darken-4" id="skills">
 		<div class="container valign">
 			<ul class="skills-chart">
 				<li class="skills-chart-legend skills-chart-legend--interest">Level of Interest</li>
@@ -45,11 +80,12 @@
 			<canvas id="myChart" width="700" height="500"></canvas>
 		</div>
 	</div>
-	<div class="section header-index valign-wrapper">
+	<div class="section grey lighten-4 header-index valign-wrapper" id="projects">
 		<div class="container valign" id="slides">
+			<h3 class="center-align">Projects</h3>
 		</div>
 	</div>
-	<div class="section grey darken-4 valign-wrapper">
+	<div class="section grey darken-4 valign-wrapper" id="contact">
 		<div class="container">
 			<div class="row">
 				<blockquote class="flow-text">If you want to collaborate on any amazing stuff or you just like to say hello and have a drink, feel free to get in touch with me!</blockquote>

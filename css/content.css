@@ -13,12 +13,38 @@ html, html * {
   -moz-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-.nav-wrapper {
-	position: absolute;
-	padding: 1%;
-	z-index: 100;
+#menu {
+	opacity: 0.8;
 }
-
+.section.header-front nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+nav {
+  -moz-transition: opacity .6s,-moz-transform .2s;
+  -o-transition: opacity .6s,-o-transform .2s;
+  -webkit-transition: opacity .6s,-webkit-transform .2s;
+  transition: opacity .6s,transform .2s;
+}
+.navbar-fixed {
+	position: fixed;
+  -moz-transform: translateY(-64px);
+  -ms-transform: translateY(-64px);
+  -webkit-transform: translateY(-64px);
+  transform: translateY(-64px);
+	color: black;
+}
+nav.navbar-fixed ul li a {
+	color: black;
+}
+.visible {  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
 .header-front {
 	height: 100vh;
 }
@@ -71,12 +97,16 @@ html, html * {
 		font-size: 4.6vw
 	}
 }
+#about h1 {
+	letter-spacing: 0.3rem;
+  font-weight: 300;
+  font-size: 3.5rem;
+}
 .work-container {
 	font-size: 1.3rem;
 	padding-top: 5%;
 	text-transform: uppercase;
 }
-
 .tilt {
 	overflow: hidden;
 	position: relative;
@@ -84,7 +114,6 @@ html, html * {
 	height: 100%;
 	margin: 0 auto;
 }
-
 .tilt__back,
 .tilt__front {
 	width: 100%;
@@ -95,31 +124,26 @@ html, html * {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-
 .tilt__back {
 	position: relative;
 }
-
 .tilt__front {
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-
 .hero {
 	position: relative;
 	height: 100%;
 	overflow: hidden;
 	text-align: center;
 }
-
 .hero__imgwrap {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 }
-
 .hero__img {
 	position: absolute;
 	top: 50%;
@@ -129,12 +153,10 @@ html, html * {
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 }
-
 .hero__imgwrap .tilt__back,
 .hero__imgwrap .tilt__front {
 	background-size: contain;
 }
-
 @media screen and (min-aspect-ratio: 1440/960) {
 	.hero__imgwrap .tilt__back,
 	.hero__imgwrap .tilt__front,
@@ -145,6 +167,10 @@ html, html * {
 		width: 100vw;
 		height: auto;
 	}
+}
+#slides h3 {
+	letter-spacing: 0.5rem;
+	font-weight: 300;
 }
 .panel.row .col {
 	padding: 0px;
@@ -181,7 +207,9 @@ html, html * {
   background-color: #e8e8e8;
   margin: 5rem -0.75rem;
 }
-	
+.no-transform {
+	text-transform: none;
+}
 @media screen and (min-width: 601px) {
 	.panel.row .col.m6 {
 		width: 43%
@@ -199,23 +227,19 @@ html, html * {
 #myChart {
   cursor: crosshair
 }
-
 .skills-chart {
   text-align: center;
   padding: 30px;
   margin: 0;
   box-sizing: border-box;
 }
-
 .skills-chart-legend {
   margin: 0 auto 15px
 }
-
 .skills-chart-canvas {
   max-width: 700px;
   margin: auto
 }
-
 .skills-chart-legend {
   display: inline-block;
   list-style: none;
@@ -227,7 +251,6 @@ html, html * {
   text-transform: uppercase;
   letter-spacing: .05em
 }
-
 .skills-chart-legend:before {
   content: "";
   display: block;
@@ -236,19 +259,15 @@ html, html * {
   height: 9px;
   width: 9px
 }
-
 .skills-chart-legend--interest {
   color: #2bb0d4
 }
-
 .skills-chart-legend--interest:before {
   background: #2bb0d4
 }
-
 .skills-chart-legend--skill {
   color: #61c191
 }
-
 .skills-chart-legend--skill:before {
   background: #61c191
 }
