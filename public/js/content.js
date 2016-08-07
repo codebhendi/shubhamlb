@@ -245,6 +245,7 @@
 		});
 		chart();
 		scrollMenu();
+		sideNavBar();
 	}
 
  
@@ -458,6 +459,40 @@ function scrollMenu() {
 		if (lastPos === 0) {
 			el.classList.remove("visible");
 		}
+
+		el.style.height = "auto";
+
+		var uls = document.getElementsByClassName('side-nav');
+
+		for (var i of uls) {
+			i.style.transform = "translateX(-150%)";
+		}
+
 	}, 
-	false);
+	false, false);
+}
+
+function sideNavBar() {
+	var el = document.getElementsByClassName('button-collapse');
+
+	for (var i of el) {
+		i.addEventListener("click", function(e) {
+			var parent = this.parentElement;
+			var menu = parent.children[2];
+			
+			menu.style.transform = "translateX(0)";
+			menu = parent.parentElement;
+			menu.style.height = "100%";
+
+			var that = menu;
+			menu = parent.children[2];
+
+			for (var j of menu.children) {
+				j.addEventListener("click", function(e) {
+					that.style.height = "auto";
+					this.parentElement.style.transform = "translateX(-105%)"
+				});
+			}
+		}, false, false);
+	}
 }

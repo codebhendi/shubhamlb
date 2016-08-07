@@ -13,8 +13,12 @@ html, html * {
   -moz-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-#menu {
-	opacity: 0.8;
+.side-nav {
+	width: 100%;
+	transition: transform .2s;
+}
+.side-nav li:first-child {
+	font-size: 1.5rem!important;
 }
 .section.header-front nav{
 	position: absolute;
@@ -31,16 +35,19 @@ nav {
 }
 .navbar-fixed {
 	position: fixed;
-  -moz-transform: translateY(-64px);
-  -ms-transform: translateY(-64px);
-  -webkit-transform: translateY(-64px);
-  transform: translateY(-64px);
 	color: black;
 }
 nav.navbar-fixed ul li a {
 	color: black;
 }
-.visible {  -moz-transform: translateY(0);
+#menu {
+	-moz-transform: translateY(-64px);
+  -ms-transform: translateY(-64px);
+  -webkit-transform: translateY(-64px);
+  transform: translateY(-64px);
+}
+#menu.visible {  
+	-moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
   transform: translateY(0);
@@ -97,6 +104,7 @@ nav.navbar-fixed ul li a {
 		font-size: 4.6vw
 	}
 }
+
 #about h1 {
 	letter-spacing: 0.3rem;
   font-weight: 300;
@@ -183,6 +191,7 @@ nav.navbar-fixed ul li a {
 	text-transform: uppercase;
 	letter-spacing: 1vw;
 	margin-bottom: 2vw;
+	font-size: 1.5rem;
 }
 .panel-title:after {
 	margin: 3rem 0px auto 0px;
