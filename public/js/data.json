@@ -32,7 +32,7 @@ var data = [
 		"img": "img/chrome.jpg",
 		"body": "Chrome Extension developed to download vides from almost all video streaming websites. The webites from which it can download also includes and hence it is not in chrome store",
 		"technologies": "Chrome  Extension api, Javascript, HTML, CSS, AJAX",
-		"worked": "ALl the parts",
+		"worked": "All the parts",
 		"status": "completed",
 		"color": "green",
 		"link": "https://github.com/codebhendi/videoDownloader"
