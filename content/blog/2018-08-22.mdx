@@ -1,0 +1,40 @@
+---
+title: Current Progress
+date: "2018-08-22"
+description: "Another day another blog time for some technological developments which has taken place in the last couple of months. But before that I just started writing this blog and an old blog which I had drafter I don’t know how long ago popped up and now I am going to start with that."
+---
+```bash
+sudo netstat -nlp | grep :80
+```
+
+This command lets you check out any process which is running on the mentioned port (which in this case is 80). It can be very helpful when you are running multiple servers on your local machine and one of them doesn’t close properly and you are wondering why this new server is not starting on this port when nothing is being run on it. It will help you get the “PID” of that particular process on your UNIX system and then you are free to kill it. Damn, it feels good to be a killer.
+
+
+Next we have my progress as a developer. My last blog post was in Feb in which I mentioned what I was doing. From that time I have made no new major projects for my past organization and was involved in only maintaining current and past projects. Main reason behind this being my submission of resignation in mid March. So, I was clearly not interested in creating any new projects and same was with my organization.
+
+
+At that point I was mainly working in three domain: Django, python application development and Android development. In my pursuit to get a reliable location tracking service took me on an adventure where I may have devoured all the methods to run a service and keep it running forever. The last and final which I remember was foreground service. It was the one which gave me the best results but still not the best one that I wanted. I then tried to improve my location acquiring methods but I couldn’t have used android’s recommended method for that i.e. using play service and that requires certain version of play service and couldn’t force my users to do so. Hence, I had to resort to older tactics which worked well for some versions but not in all android devices. Also not for all terrains which I later discovered also for some unknown reasons it didn’t work in metro and remote locations. At that point it seemed pointless to pursue this task as I had very limited knowledge of android development let alone location services. This app is my biggest regret in my 3–4 years of development. I tried my best or not I don’t know but this could have been done and I just couldn’t do it. Sorry for not being able to create an app which could track location while running in background. Sorrry, again.
+
+
+Another project I was working on was LMS, it is a HR portal created entirely in Django and using semantic UI for frontend UI design. It was a fun project which enhanced my knowledge of Django and also the speed at which I can develop Django applications. I talked about this in my last blog post. I after that added a few more apps to the same application for other HR related activities. It has grown from just being there for adding and applying leaves to a full fledged HR portal. After a while I also added a worked using Redis and rabbitmq to handle few background tasks. Doing this enhanced servers response time by a lot.
+
+
+Next Django server I had was our production ERP which was in some clear need of maintenance. I had to host it on our public IP and digitalocean’s blog on connecting local server to VPN helped me a lot on this. Actually no a lot but the entire thing was done using their blog. I don’t have the link to the blog but if you can search host server using VPN you can easily find their blog. A word of thanks also to open VPN for making such amazing software which make hosting your local VPN server much simpler. Then the only thing remaining was routing using my router and we were good to go.
+
+
+Then there were some logic changes and model changes for statistical purposes. Those were pretty simple only the code base was difficult to work with. After that I had to make a lot of auditory changes to keep log of all the changes made to our database and user logins. For this part I had to go deep and understand middlewares in Django. This was the first for me in writing and understanding middlewares. I for the purpose of controlling user access to our server used “django-axes” and for maintaining history of each model used “django-history”. Django provides a lot of the functionality from the box which results in us developer have to worry less about the regular stuff and focus on the new and different.
+
+
+We had another server, which was a very basic Django server and yes I did use Django server for file sharing where I could have used a windows network sharing. But at that time I didn’t have any other clue on how to handle such system and a web server seemed like the best idea. It was a very bare bones structure and I was asked to modify certain models and forms to better track what was being uploaded. At the same time I modified the UI again using semantic UI to increase its visual appeal.
+
+
+Then we had some python application using tkinter and some pure simple scripts turned into application. There were certain small bare bone applications used to connect to serial devices and send commands to them while simultaneously reading from that device. It was a single device interface and didn’t support multiple device, which now I think could have been done very easily. There were certain variations of this which were also created. I also modified some parts of older applications which I previously created but nothing new was learned in that process.
+
+
+At that time I had started looking for my new job and came to realize that I was very much behind in my technological knowledge as the world was using react and node increasingly and I had worked on a very few JS projects in the last year and half. It was time to sharpen the JS blade again. I started doing some projects and a course on front end development. The projects for the most part were easy and most of the stuff taught I already knew just needed some brushing up on the core concepts and also ES6.
+
+
+Next was react. I had no clue what react was nad how it worked. I did one or two projects on angular and that was it.
+
+
+We will talk about react and the other loads of stuff I learned at my new job. Till then good buy.

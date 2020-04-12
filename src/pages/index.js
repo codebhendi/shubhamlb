@@ -7,7 +7,7 @@ import Button from "../components/button"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Gatsby Starter Personal Website"
+    const siteTitle = `Hi, I am Shubham`;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -17,17 +17,16 @@ class IndexPage extends React.Component {
         />
         <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
         <h1>
-          Hey people{" "}
+          I am a Software Engineer{" "}
           <span role="img" aria-label="wave emoji">
             👋
           </span>
         </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
+        <p>I have been working as a web developer for last three years.</p>
         <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
+          I have experience in javascript, react, node, python, express, and django. I am an avid fan of new technologies and is always on the look out for new challenges.
         </p>
-        <p>Now go build something great!</p>
+        <p>I am also a poetm on sideline. You can check my work below.</p>
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link>
