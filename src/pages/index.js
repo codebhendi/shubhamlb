@@ -15,7 +15,7 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
+        <img style={{ margin: 0 }} src="./background.jpg" alt="Starry background" />
         <h1>
           I am a Software Engineer{" "}
           <span role="img" aria-label="wave emoji">
@@ -26,7 +26,7 @@ class IndexPage extends React.Component {
         <p>
           I have experience in javascript, react, node, python, express, and django. I am an avid fan of new technologies and is always on the look out for new challenges.
         </p>
-        <p>I am also a poetm on sideline. You can check my work below.</p>
+        <p>I am also a poet on sideline. You can check my work below.</p>
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link>

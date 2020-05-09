@@ -3,7 +3,7 @@ module.exports = {
     // edit below
     title: `Shubham Bhendarkar's Personal Blog`,
     author: `Shubham Bhendarkar`,
-    description: `A personal blog where I share my technological adventures and my poems.`,
+    description: `Shubham Bhendarkar's personal blog where I share my technological adventures and poems.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
   },
   plugins: [
